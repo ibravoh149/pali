@@ -13,7 +13,7 @@ To deploy the app on docker
 e.g "docker run -p 8000:3000 test-app"
 
 endpoint:
-POST - <host>:<your_desired_port>/api/meals
+POST - <localhost>:<your_desired_port>/api/meals
         req body-> {
                  mealIds:[mealid1, mealId2 mealId3 ...] //ids must be strings
         }
