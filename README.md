@@ -15,9 +15,21 @@ e.g "docker run -p 8000:3000 test-app".
 Endpoint:
 
 POST -
- <localhost>:<your_desired_port>/api/meals
+ http://localhost:<mapped_port>/api/meals
         req body-> {
                  "mealIds":[mealid1, mealId2 mealId3 ...] //ids must be strings
         }
 
+
+
         response ://returns an id of meal with the least ingredients
+
+e.g :
+endpoint : http://localhost:8000/meals
+request body : {
+	"mealIds":["52961", "52962", "52963", "52966", "52958"]
+}
+
+response body: {
+    "mealId": "52958"
+}
